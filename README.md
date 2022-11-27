@@ -1,6 +1,6 @@
 # F# Playground
 
-This project serves as a playground for exploring this [F#](https://grain-lang.org/) programming language.
+This project serves as a playground for exploring this [F#](https://fsharp.org/) programming language.
 
 ## Prerequisites
 
