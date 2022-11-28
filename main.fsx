@@ -7,7 +7,7 @@ let rec last list =
 let rec lastTwo list =
     match list with
     | [] | [_] -> None
-    | [x; y] -> Some(x, y)
+    | [x; y] -> Some (x, y)
     | _::rest -> lastTwo rest
 
 printfn "%A" (last [])
