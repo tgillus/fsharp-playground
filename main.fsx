@@ -13,6 +13,7 @@ let rec lastTwo list =
 printfn "%A" (last [])
 printfn "%A" (last [1])
 printfn "%A" (last [1; 2])
+printfn "%A" (last [1; 2; 3])
 printfn "%A" (lastTwo [])
 printfn "%A" (lastTwo [1])
 printfn "%A" (lastTwo [1; 2])
