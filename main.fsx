@@ -49,11 +49,11 @@ printfn "%b" (length [ 1 ] = 1)
 printfn "%b" (length [ 1; 2 ] = 2)
 printfn "%b" (length [ 1; 2; 3 ] = 3)
 
-let rec reverse list =
-    match list with
-    | []
-    | [ _ ] -> list
-    | first :: rest -> reverse rest @ [ first ]
+let reverse list =
+    let rec helper acc =
+        function
+        | [] -> acc
+        | first :: rest -> helper (first :: acc) rest in helper [] list
 
 printfn "%b" (reverse [] = [])
 printfn "%b" (reverse [ 1 ] = [ 1 ])
